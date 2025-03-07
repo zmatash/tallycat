@@ -38,7 +38,15 @@ export default [
 	},
 	{
 		rules: {
-			"prefer-const": "error" // Enforce using `const` instead of `let`
+			"svelte/prefer-destructured-store-props": "error",
+			"svelte/no-unused-class-name": [
+				"error",
+				{
+					allowedClassNames: ["col-centred", "row-centred", "fill-space"]
+				}
+			],
+			"svelte/button-has-type": "error",
+			"svelte/prefer-const": "error" // Enforce using `const` instead of `let`,
 		}
 	}
 ];
