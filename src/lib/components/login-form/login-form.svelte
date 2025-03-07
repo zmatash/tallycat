@@ -83,10 +83,10 @@
 	.login-button {
 		width: 100%;
 		height: var(--font-48);
-		background: var(--lavender);
+		background: var(--mauve);
 		border-radius: var(--border-radius-4);
 		font-size: var(--font-32);
-		color: var(--surface0);
+		color: var(--crust);
 		font-weight: bold;
 		margin: var(--padding-8) 0;
 	}

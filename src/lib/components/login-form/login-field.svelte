@@ -67,7 +67,7 @@
 
 	.input-container:focus-within {
 		background-color: var(--surface1);
-		border: 1px solid var(--crust);
+		border: 1px solid var(--lavender);
 	}
 
 	div svg {
