@@ -21,21 +21,21 @@
 <style>
 	button {
 		height: 100%;
-		width: 64px;
-		color: var(--text);
+		width: var(--font-64);
+		color: var(--subtext1);
 	}
 
 	span {
 		font-size: var(--font-24);
-		font-family: "Poppins", sans-serif;
-		font-weight: 400;
+		font-weight: bold;
+		color: var(--text);
 	}
 
 	.group-bar-container {
 		width: 100%;
-		height: 42px;
+		height: var(--font-48);
 		background: var(--mantle);
-		border-bottom: 1px solid var(--overlay0);
+		border-bottom: 1px solid var(--surface1);
 		align-items: center;
 		justify-content: space-between;
 	}

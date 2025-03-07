@@ -13,7 +13,7 @@
 </script>
 
 <button
-	class={`new-counter-btn ${activeId === buttonId ? "active-style" : ""}`}
+	class={`col-centred new-counter-btn ${activeId === buttonId ? "active-style" : ""}`}
 	type="button"
 	id={buttonId}
 	onclick={() => onClick(buttonId)}
@@ -26,30 +26,28 @@
 
 <style>
 	button {
-		display: flex;
-		flex-direction: column;
 		aspect-ratio: 1;
 		height: 100%;
-		border-radius: 50%;
-		color: var(--text);
+		color: var(--subtext1);
 	}
 
 	label {
-		font-family: "Poppins", sans-serif;
-		font-size: 14px;
+		font-size: var(--font-16);
 	}
 
 	svg {
-		width: 24px;
-		height: 24px;
+		width: var(--font-24);
+		height: var(--font-24);
 		fill: none;
 		stroke-width: 1.5px;
 		stroke-linecap: round;
 		stroke-linejoin: round;
+		color: var(--subtext1);
 	}
 
 	.active-style {
-		color: var(--mauve);
+		color: var(--sky);
+		font-weight: bold;
 	}
 
 	svg.active-style {

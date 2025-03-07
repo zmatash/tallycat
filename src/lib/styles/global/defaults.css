@@ -39,7 +39,7 @@ input:focus {
 svg {
     stroke-width: 1px;
     fill: none;
-    stroke: var(--neutral-900);
+    stroke: var(--subtext1)
 }
 
 button>svg,
