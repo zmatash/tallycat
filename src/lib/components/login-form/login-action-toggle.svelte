@@ -4,9 +4,9 @@
 		formMode: "login" | "register";
 	}
 
-	let { callback, formMode }: Props = $props();
+	const { callback, formMode }: Props = $props();
 
-	let text = $derived(
+	const text = $derived(
 		formMode === "login"
 			? {
 					span: "Dont have an account?",
@@ -21,7 +21,7 @@
 
 <div class="signup-container row-centred">
 	<span>{text.span}</span>
-	<button aria-label="register" onclick={callback}>{text.button}</button>
+	<button aria-label="register" onclick={callback} type="button">{text.button}</button>
 </div>
 
 <style>

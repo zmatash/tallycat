@@ -7,10 +7,10 @@
 		icon: keyof typeof spriteKeys;
 	}
 
-	let { callback, icon }: Props = $props();
+	const { callback, icon }: Props = $props();
 </script>
 
-<button onclick={callback} aria-label="lab" class="no-highlight">
+<button type="button" onclick={callback} aria-label="lab" class="no-highlight">
 	<div class="button-visual">
 		<svg>
 			<use xlink:href={getSpriteHref(icon)} />

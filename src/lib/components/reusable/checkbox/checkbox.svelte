@@ -1,17 +1,17 @@
 <script lang="ts">
 	import { getSpriteHref } from "$lib/assets";
 
-	let text = "Remember Me";
-	let label = "temp";
+	const text = "Remember Me";
+	const label = "temp";
 
 	let isChecked = $state(true);
-	let onClick = () => {
+	const onClick = () => {
 		isChecked = !isChecked;
 	};
 </script>
 
 <div class="container">
-	<button aria-label={label} onclick={onClick}>
+	<button type="button" aria-label={label} onclick={onClick}>
 		{#if isChecked}
 			<svg>
 				<use href={getSpriteHref("check")} />

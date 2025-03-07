@@ -32,7 +32,9 @@
 				<a href="/auth/reset-password" class="forgot-password-button">Reset Password</a>
 			{/if}
 		</div>
-		<button aria-label={formMode} class="login-button">{formMode ? "Login" : "Register"}</button>
+		<button type="submit" aria-label={formMode} class="login-button"
+			>{formMode ? "Login" : "Register"}</button
+		>
 	</form>
 
 	<div class="divider">

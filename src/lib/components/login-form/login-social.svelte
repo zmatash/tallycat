@@ -6,14 +6,19 @@
 		onClick: () => void;
 	}
 
-	let { provider, onClick }: Props = $props();
-	let text = {
+	const { provider, onClick }: Props = $props();
+	const text = {
 		google: "Google",
 		discord: "Discord"
 	};
 </script>
 
-<button class="login-button" aria-label={`Sign in with ${text[provider]}`} onclick={onClick}>
+<button
+	class="login-button"
+	aria-label={`Sign in with ${text[provider]}`}
+	onclick={onClick}
+	type="button"
+>
 	<svg>
 		<title>{`${text[provider]} logo`}</title>
 		<use href={getSpriteHref(provider)} />

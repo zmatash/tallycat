@@ -1,5 +1,5 @@
 <script lang="ts">
-	let { children } = $props();
+	const { children } = $props();
 </script>
 
 <main class="fill-space col-centred">

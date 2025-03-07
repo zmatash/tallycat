@@ -2,7 +2,7 @@
 	import { getSpriteHref } from "$lib/assets";
 </script>
 
-<button class="new-counter-btn" aria-label="lab">
+<button aria-label="lab" type="button">
 	<svg>
 		<use xlink:href={getSpriteHref("plus")} />
 	</svg>

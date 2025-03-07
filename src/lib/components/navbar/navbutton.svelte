@@ -9,11 +9,12 @@
 		onClick: (id: string) => void;
 	}
 
-	let { icon, label, buttonId, onClick, activeId }: Props = $props();
+	const { icon, label, buttonId, onClick, activeId }: Props = $props();
 </script>
 
 <button
 	class={`new-counter-btn ${activeId === buttonId ? "active-style" : ""}`}
+	type="button"
 	id={buttonId}
 	onclick={() => onClick(buttonId)}
 >

@@ -6,7 +6,7 @@
 		label: string;
 	}
 
-	let { label }: Props = $props();
+	const { label }: Props = $props();
 	let count = $state(0);
 
 	const onIncrement = () => (count += 1);
@@ -24,7 +24,7 @@
 
 <div class="counter-outer">
 	<CounterBtn callback={onDecrement} icon="minus" />
-	<CountDisplay {label} {count} incement={onIncrement} decrement={onDecrement} set={onSet} />
+	<CountDisplay {label} {count} incement={onIncrement} decrement={onDecrement} setCount={onSet} />
 	<CounterBtn callback={onIncrement} icon="plus" />
 </div>
 

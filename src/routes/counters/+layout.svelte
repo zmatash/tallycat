@@ -2,7 +2,7 @@
 	import PhoneGroupbar from "$lib/components/group-bar/mobile/phone-groupbar.svelte";
 	import PhoneNavbar from "$lib/components/navbar/phone/phone-navbar.svelte";
 
-	let { children } = $props();
+	const { children } = $props();
 </script>
 
 <header>

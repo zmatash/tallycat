@@ -6,7 +6,7 @@
 	const onNavButtonClick = (id: string) => (activeId = id);
 </script>
 
-<nav class="navbar">
+<nav>
 	<PhoneNavbutton
 		icon="house"
 		buttonId="home-btn"

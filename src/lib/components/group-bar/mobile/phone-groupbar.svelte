@@ -1,17 +1,17 @@
 <script lang="ts">
 	import { getSpriteHref } from "$lib/assets";
 
-	let selectedGroup = $state("Animals");
+	const selectedGroup = $state("Animals");
 </script>
 
 <div class="group-bar-container">
-	<button aria-label="group-selection-dropdown">
+	<button type="button" aria-label="group-selection-dropdown">
 		<svg>
 			<use xlink:href={getSpriteHref("menu")} />
 		</svg>
 	</button>
 	<span>{selectedGroup}</span>
-	<button id="delete-group-btn" aria-label="delete-group-btn">
+	<button type="button" id="delete-group-btn" aria-label="delete-group-btn">
 		<svg>
 			<use xlink:href={getSpriteHref("trash-2")} />
 		</svg>

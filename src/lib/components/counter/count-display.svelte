@@ -4,10 +4,10 @@
 		label: string;
 		incement: () => void;
 		decrement: () => void;
-		set: (value: number) => void;
+		setCount: (value: number) => void;
 	}
 
-	let { count, label, set }: Props = $props();
+	let { count, label, setCount }: Props = $props();
 </script>
 
 <div class="count-wrapper">
@@ -18,7 +18,7 @@
 			type="number"
 			id="count-input"
 			bind:value={count}
-			onchange={(e) => set(e.currentTarget.valueAsNumber)}
+			onchange={(e) => setCount(e.currentTarget.valueAsNumber)}
 		/>
 	</div>
 </div>
