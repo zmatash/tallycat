@@ -1,0 +1,38 @@
+:root {
+    font-size: 16px;
+
+    --padding-4: 4px;
+    --padding-8: 8px;
+    --padding-16: 16px;
+    --padding-24: 24px;
+    --padding-32: 32px;
+    --padding-48: 48px;
+
+
+    --font-16: 1rem;
+    --font-18: 1.125rem;
+    --font-20: 1.25rem;
+    --font-24: 1.5rem;
+    --font-32: 2rem;
+    --font-36: 2.25rem;
+    --font-48: 3rem;
+    --font-64: 4rem;
+
+
+    --border-radius-4: 4px;
+    --border-radius-8: 8px;
+    --border-radius-16: 16px;
+    --border-radius-24: 24px;
+}
+
+@font-face {
+    src: url("/fonts/AvenirNext.ttf") format("truetype");
+    font-family: "AvenirNext";
+    font-display: block;
+}
+
+@font-face {
+    src: url("/fonts/Poppins.otf") format("opentype");
+    font-family: "Poppins";
+    font-display: block;
+}
