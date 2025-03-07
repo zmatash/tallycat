@@ -42,7 +42,7 @@ export default [
 			"svelte/no-unused-class-name": [
 				"error",
 				{
-					allowedClassNames: ["col-centred", "row-centred", "fill-space"]
+					allowedClassNames: ["col-centred", "row-centred", "fill-space", "no-highlight"]
 				}
 			],
 			"svelte/button-has-type": "error",
